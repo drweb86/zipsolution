@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{90D57AFA-50C5-4BA0-85D1-4330E4D5BF0F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZipSolution</RootNamespace>
+    <AssemblyName>ZipSolution</AssemblyName>
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyFile>..\ZipSolutionDevelopment.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <ApplicationIcon>Resources\ZipSolution.ico</ApplicationIcon>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <CodeAnalysisRules>+!Microsoft.Design#CA1000;+!Microsoft.Design#CA1001;+!Microsoft.Design#CA1002;+!Microsoft.Design#CA1003;+!Microsoft.Design#CA1004;+!Microsoft.Design#CA1005;+!Microsoft.Design#CA1006;+!Microsoft.Design#CA1007;+!Microsoft.Design#CA1008;+!Microsoft.Design#CA1009;+!Microsoft.Design#CA1010;+!Microsoft.Design#CA1011;+!Microsoft.Design#CA1012;+!Microsoft.Design#CA1013;+!Microsoft.Design#CA1014;+!Microsoft.Design#CA1016;+!Microsoft.Design#CA1017;+!Microsoft.Design#CA1018;+!Microsoft.Design#CA1019;+!Microsoft.Design#CA1020;+!Microsoft.Design#CA1021;+!Microsoft.Design#CA1023;+!Microsoft.Design#CA1024;+!Microsoft.Design#CA1025;+!Microsoft.Design#CA1026;+!Microsoft.Design#CA1027;+!Microsoft.Design#CA1028;+!Microsoft.Design#CA1030;+!Microsoft.Design#CA1031;+!Microsoft.Design#CA1032;+!Microsoft.Design#CA1033;+!Microsoft.Design#CA1034;+!Microsoft.Design#CA1035;+!Microsoft.Design#CA1036;+!Microsoft.Design#CA1038;+!Microsoft.Design#CA1039;+!Microsoft.Design#CA1040;+!Microsoft.Design#CA1041;+!Microsoft.Design#CA1043;+!Microsoft.Design#CA1044;+!Microsoft.Design#CA1045;+!Microsoft.Design#CA1046;+!Microsoft.Design#CA1047;+!Microsoft.Design#CA1048;+!Microsoft.Design#CA1049;+!Microsoft.Design#CA1050;+!Microsoft.Design#CA1051;+!Microsoft.Design#CA1052;+!Microsoft.Design#CA1053;+!Microsoft.Design#CA1054;+!Microsoft.Design#CA1055;+!Microsoft.Design#CA1056;+!Microsoft.Design#CA1057;+!Microsoft.Design#CA1058;+!Microsoft.Design#CA1059;+!Microsoft.Design#CA1060;+!Microsoft.Design#CA1061;+!Microsoft.Design#CA1063;+!Microsoft.Design#CA1064;+!Microsoft.Design#CA2210;+!Microsoft.Globalization#CA1300;+!Microsoft.Globalization#CA1301;+!Microsoft.Globalization#CA1302;+!Microsoft.Globalization#CA1304;+!Microsoft.Globalization#CA1305;+!Microsoft.Globalization#CA1306;+!Microsoft.Interoperability#CA1400;+!Microsoft.Interoperability#CA1401;+!Microsoft.Interoperability#CA1402;+!Microsoft.Interoperability#CA1403;+!Microsoft.Interoperability#CA1404;+!Microsoft.Interoperability#CA1405;+!Microsoft.Interoperability#CA1406;+!Microsoft.Interoperability#CA1407;+!Microsoft.Interoperability#CA1408;+!Microsoft.Interoperability#CA1409;+!Microsoft.Interoperability#CA1410;+!Microsoft.Interoperability#CA1411;+!Microsoft.Interoperability#CA1412;+!Microsoft.Interoperability#CA1413;+!Microsoft.Interoperability#CA1414;+!Microsoft.Interoperability#CA1415;+!Microsoft.Mobility#CA1600;+!Microsoft.Mobility#CA1601;+!Microsoft.Naming#CA1700;+!Microsoft.Naming#CA1701;+!Microsoft.Naming#CA1702;+!Microsoft.Naming#CA1703;+!Microsoft.Naming#CA1704;+!Microsoft.Naming#CA1707;+!Microsoft.Naming#CA1708;+!Microsoft.Naming#CA1709;+!Microsoft.Naming#CA1710;+!Microsoft.Naming#CA1711;+!Microsoft.Naming#CA1712;+!Microsoft.Naming#CA1713;+!Microsoft.Naming#CA1714;+!Microsoft.Naming#CA1715;+!Microsoft.Naming#CA1716;+!Microsoft.Naming#CA1717;+!Microsoft.Naming#CA1719;+!Microsoft.Naming#CA1720;+!Microsoft.Naming#CA1721;+!Microsoft.Naming#CA1722;+!Microsoft.Naming#CA1724;+!Microsoft.Naming#CA1725;+!Microsoft.Naming#CA1726;+!Microsoft.Performance#CA1800;+!Microsoft.Performance#CA1802;+!Microsoft.Performance#CA1804;+!Microsoft.Performance#CA1805;+!Microsoft.Performance#CA1809;+!Microsoft.Performance#CA1810;+!Microsoft.Performance#CA1811;+!Microsoft.Performance#CA1812;+!Microsoft.Performance#CA1813;+!Microsoft.Performance#CA1814;+!Microsoft.Performance#CA1815;+!Microsoft.Performance#CA1819;+!Microsoft.Performance#CA1820;+!Microsoft.Performance#CA1821;+!Microsoft.Performance#CA1822;+!Microsoft.Performance#CA1823;+!Microsoft.Portability#CA1900;+!Microsoft.Portability#CA1901;+!Microsoft.Security#CA2102;+!Microsoft.Security#CA2103;+!Microsoft.Security#CA2104;+!Microsoft.Security#CA2105;+!Microsoft.Security#CA2106;+!Microsoft.Security#CA2107;+!Microsoft.Security#CA2108;+!Microsoft.Security#CA2109;+!Microsoft.Security#CA2111;+!Microsoft.Security#CA2112;+!Microsoft.Security#CA2114;+!Microsoft.Security#CA2115;+!Microsoft.Security#CA2116;+!Microsoft.Security#CA2117;+!Microsoft.Security#CA2118;+!Microsoft.Security#CA2119;+!Microsoft.Security#CA2120;+!Microsoft.Security#CA2121;+!Microsoft.Security#CA2122;+!Microsoft.Security#CA2123;+!Microsoft.Security#CA2124;+!Microsoft.Security#CA2126;+!Microsoft.Security#CA2127;+!Microsoft.Security#CA2128;+!Microsoft.Security#CA2129;+!Microsoft.Usage#CA1801;+!Microsoft.Usage#CA1806;+!Microsoft.Usage#CA2200;+!Microsoft.Usage#CA2201;+!Microsoft.Usage#CA2205;+!Microsoft.Usage#CA2207;+!Microsoft.Usage#CA2208;+!Microsoft.Usage#CA2211;+!Microsoft.Usage#CA2212;+!Microsoft.Usage#CA2213;+!Microsoft.Usage#CA2214;+!Microsoft.Usage#CA2216;+!Microsoft.Usage#CA2217;+!Microsoft.Usage#CA2218;+!Microsoft.Usage#CA2219;+!Microsoft.Usage#CA2220;+!Microsoft.Usage#CA2221;+!Microsoft.Usage#CA2222;+!Microsoft.Usage#CA2223;+!Microsoft.Usage#CA2224;+!Microsoft.Usage#CA2225;+!Microsoft.Usage#CA2226;+!Microsoft.Usage#CA2227;+!Microsoft.Usage#CA2228;+!Microsoft.Usage#CA2229;+!Microsoft.Usage#CA2230;+!Microsoft.Usage#CA2231;+!Microsoft.Usage#CA2232;+!Microsoft.Usage#CA2233;+!Microsoft.Usage#CA2234;+!Microsoft.Usage#CA2235;+!Microsoft.Usage#CA2236;+!Microsoft.Usage#CA2237;+!Microsoft.Usage#CA2238;+!Microsoft.Usage#CA2239;+!Microsoft.Usage#CA2240;+!Microsoft.Usage#CA2242;+!Microsoft.Usage#CA2243</CodeAnalysisRules>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <StartArguments>666 "FailOnError=e:\1 2\ass.txt"</StartArguments>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>Migrated rules for ZipSolution (2).ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <OutputPath>..\..\Output\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <CodeAnalysisRuleSet>Migrated rules for ZipSolution (2).ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <OutputPath>..\..\Output\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>ZipSolution.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="HDE.Platform">
+      <HintPath>..\Bins\HDE.Platform\HDE.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp, Version=0.64.4208.21476, Culture=neutral, PublicKeyToken=420ab23768cba3c5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bins\Eugene Sichcar-SevenZipSharp.codeplex.com\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Commands\AddFilterConfigurationCommand.cs" />
+    <Compile Include="Commands\ChangeAppLanguageCommand.cs" />
+    <Compile Include="Commands\CreateSolutionCommand.cs" />
+    <Compile Include="Commands\EditSolutionCommand.cs" />
+    <Compile Include="Commands\EditTemplateCommand.cs" />
+    <Compile Include="Commands\HelpCommand.cs" />
+    <Compile Include="Commands\RemoveSolutionFromModelCommand.cs" />
+    <Compile Include="Commands\AddSolutionToModelCommand.cs" />
+    <Compile Include="Commands\SaveSolutionToFileCommand.cs" />
+    <Compile Include="Commands\OpenFolderInShellCommand.cs" />
+    <Compile Include="Commands\ExecuteInAnotherInstanceCommand.cs" />
+    <Compile Include="Commands\CopyScriptCommand.cs" />
+    <Compile Include="Commands\ScriptType.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\ChooseDataSourceTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\ChooseDataSourceTypeForm.Designer.cs">
+      <DependentUpon>ChooseDataSourceTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\DesignArchiveUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ui\DesignArchiveUserControl.Designer.cs">
+      <DependentUpon>DesignArchiveUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\FolderWithFiltersUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ui\FolderWithFiltersUserControl.Designer.cs">
+      <DependentUpon>FolderWithFiltersUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\GetLastModificationsTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\GetLastModificationsTimeForm.Designer.cs">
+      <DependentUpon>GetLastModificationsTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\IChooseDataSourceTypeView.cs" />
+    <Compile Include="Ui\IDataSourceConfig.cs" />
+    <Compile Include="Ui\InputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\InputForm.Designer.cs">
+      <DependentUpon>InputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\NewFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\NewFilterForm.Designer.cs">
+      <DependentUpon>NewFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\SolutionPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\SolutionPropertiesForm.Designer.cs">
+      <DependentUpon>SolutionPropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\RegisteredErrors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\RegisteredErrors.Designer.cs">
+      <DependentUpon>RegisteredErrors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\RequestVersionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\RequestVersionForm.Designer.cs">
+      <DependentUpon>RequestVersionForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\ChooseDataSourceTypeForm.resx">
+      <DependentUpon>ChooseDataSourceTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\DesignArchiveUserControl.resx">
+      <DependentUpon>DesignArchiveUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\FolderWithFiltersUserControl.resx">
+      <DependentUpon>FolderWithFiltersUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\GetLastModificationsTimeForm.resx">
+      <DependentUpon>GetLastModificationsTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\InputForm.resx">
+      <DependentUpon>InputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\NewFilterForm.resx">
+      <DependentUpon>NewFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\SolutionPropertiesForm.resx">
+      <DependentUpon>SolutionPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\RegisteredErrors.resx">
+      <DependentUpon>RegisteredErrors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\RequestVersionForm.resx">
+      <DependentUpon>RequestVersionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ZipSolution.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\File.PNG" />
+    <None Include="Resources\Folder.PNG" />
+    <None Include="Resources\FolderFixed.PNG" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\Modify.PNG" />
+    <None Include="Resources\Remove.png" />
+    <None Include="Resources\Start.png" />
+    <None Include="Resources\Stop.bmp" />
+    <None Include="Resources\ZipSolution.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Blocks.png" />
+    <None Include="Resources\FilterChain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZipSolution.Core\ZipSolution.Core.csproj">
+      <Project>{496D4C47-6D17-4EAA-863E-E42A3FB333E2}</Project>
+      <Name>ZipSolution.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

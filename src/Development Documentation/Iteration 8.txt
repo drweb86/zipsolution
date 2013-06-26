@@ -1,0 +1,36 @@
+﻿Debts from i7
+// ? 
+1. UI for options from app.config
+!no editing by hands
+
+Core tasks
+
+[DONE]
+Core-15: Integration of ZipSolution with Tortoise Svn: new autoreplace symbol
+$TORTOISE_SVN_REVISION + documentation
+In case it does not exist program should fail with specified message
+
+a) implementation
+b) testing
+c) updating doc and localization
+d) configuration changes: default string should be
+DefaultInternalPurposeFormatString -> APPNAME-rev$TORTOISE_SVN_REVISION-DotNet2-$DATE-src.zip
+
+[DONE]
+Core-16. To remember previous datetime for increment by datetime filter
+
+Use-case: Ctrl + A support for filters list
+
+[DONE]
+Use-case: rollback default value for configuration: in majority of cases i require increment
+
+Minor bugs
+[DONE]
+1) minimum size of error window and vertical scrollbar
+[DONE]
+2) icons are not set to windows of an app
+
+Hot fix
+[DONE]
+1) Unicode support for ionic
+

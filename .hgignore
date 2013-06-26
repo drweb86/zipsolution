@@ -1,0 +1,9 @@
+syntax: glob
+Output/*
+src/_ReSharper.ZipSolution/*
+src/ZipSolution.Console/obj/*
+src/ZipSolution.UI/obj/*
+src/ZipSolution.Core/obj/*
+src/ZipSolution.suo
+src/ZipSolution.Console/ZipSolution.Console.csproj.user
+output/*

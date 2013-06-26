@@ -1,0 +1,19 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<UsingTask 
+		TaskName="ZipSolutionTask" 
+		AssemblyFile="$(root)..\..\output\ZipSolution.Console.exe" />
+
+	<Target Name="Main">
+		<ZipSolutionTask 
+			AnswerForFilterByDateStartTimeRequestDialogIsWeekAgo="False" 
+			Password="" 
+			UseReleaseConfiguration="False" 
+			Project="" 
+			SolutionFile="QA-Test-003.xml" 
+			Version="MS Build" 
+			LastChangeTime="" 
+			WaitMsec="0" 
+			ExtractVersionFromAssemblyInfoCsFile="" 
+			ExtractVersionFromAssemblyFile=""/>
+	</Target>
+</Project>

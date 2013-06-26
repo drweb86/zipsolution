@@ -1,0 +1,228 @@
+﻿================================
+     ZipSolution-requirements
+================================
+
+Required functions for solutions:
+
+[DONE]
+1. sorting abilitities
+- to exclude folders by default
+ bin, debug, release, obj, .svn
+- to exclude files 
+ *.tmp, *.exe, *.xml
+ files as options from archive
+ - to exclude resharper folders
+- to exclude specified files foldres
+
+[DONE]
+2. to zip in 2 configurations
+- release
+- internal
+with format strings with 
+with following items supported
+$DATE
+$INCREMENT
+$VERSION
+
+[DONE]
+2.1 configuration should be chosen on main form(internal / releadse)
+
+[DONE]
+2.2 default settings should be in the form
+APPNAME-i$INCREMENT-win32-i386-$DATE.zip
+
+[DONE]
+2.3. release setting should look like this
+APPNAME-$VERSION-win32-i386-$DATE.zip
+
+[DONE]
+3. 2-clicks solution
+- program should remember last zipped solution and restore choice
+- green button to start
+
+[DONE]
+4. zip requirements
+- zipping english file names(as minimum) and zipping russian characters as maximum
+- no encryption
+
+[DONE]
+5. Multiple places where to store archive
+
+[DONE]
+6. Log type:
+- minimum only
+
+[DONE]
+7. Localization
+- BUlocacalization into Russian and English
+
+[DONE]
+8. Running environment
+
+- mono 1.9.1 (required)[EXCLUDED: Ionic is not cross platform]
+- linux[EXCLUDED: Ionic is not cross platform]
+- windows and ,net 2.0
+
+[DONE]
+9. Program should be designed in a way it's installed in c:\program files\ddd
+and user with limited account
+(keepeing settings)
+
+[DONE]
+10. Program should be released in
+- windows installer(wix) with ability to create icon on desktop
+- compact package to run on linux[EXCLUDED: Ionic is not cross platform]
+
+[DONE]
+11. Program should be released as a separate from BUtil package
+
+[DONE]
+12. Program should support starting with command line parameter from
+- bat file
+- shortcut
+All this abilities should be documented with providing documentation!
+
+[DONE]
+13. Add a feature: i want to drop solution folder on zipsolution main form and see 'New item' dialog with solution dir
+pointed to this folder
+
+[DONE]
+14. Add a feature: whan there's no caption and user choosed dir - to set as a project name the folder name(Auto naming)
+
+[DONE]
+Core-15. Integration of ZipSolution with Tortoise Svn: new autoreplace symbol
+$TORTOISE_REVISION
++ documentation
+In case it does not exist program should fail with message
+
+[DONE]
+Core-16. To remember previous datetime for increment by datetime filter
+
+============================== other ideas ==================================
+[DONE]
+add an opportunity to change datetime format
+
+[DONE]
+add menu to all listviews with button functions
+buttons enabled when something selected
+
+UI for program settings(no editing config by hands!)
+
+settings in HDE\zs without postfix version
+
+============================== rejected =====================================
+1. exclusion of *.config files as a default filter
+Reason: app.config
+
+2. md5 checksumm - no chesksumm is required for zip archives
+
+3. vs and sharpdevelop integration via scrypts - i don't need it
+
+[REJCECTED: have no ideas how to implement this with minimum efforts required to continue of development]
+4. Options keeping redesign
+ they should use xml file and be transmittable betwean this and next versions
+ options from app.config should be moved to user options
+
+===================== CR 2 ===================================================
+[DONE]
+1. to store data format in app.config file! and include sample data formats with explanations in documentation to project
+[DONE]
+2. to disable controls when they does not needed
+[DONE]
+3. to make zip in other background thread
+[DONE]
+4. to allow stop creating archive
+===================== CR 3 ===================================================
+[DONE]
+1. when user stops creating zipped package he often wants to change settings
+in your case it will be unavailable
+
+[DONE]
+2. Please remove progressbar and exchange it on modif caption
+
+===================== CR 5 ===================================================
+[DONE]
+1) Controller
+	if (!CheckFormatStringForDate(_lastModificationsDialogTimeFormatString))
+			{
+				ShowErrorDialog(
+					string.Format(
+						CultureInfo.CurrentCulture, 
+						_invalidDateTimeFormatString, 
+						_lastModificationsDialogTimeFormatString)); <--
+				Environment.Exit(-1);
+			}
+			
+			
+			if (!CheckFormatStringForDate(_replaceTimeFormatString))
+			{
+				ShowErrorDialog(
+					string.Format(
+						CultureInfo.CurrentCulture, 
+						_invalidDateTimeFormatString,
+						_replaceTimeFormatString));<--
+				Environment.Exit(-1);
+			}
+
+[DONE]
+2) Element: implement instead IClonable
+
+[DONE]
+3) mark as sealed filter classes and folder/file element classes
+
+[DONE]
+4) Filter: rename internal IFilter ProduceActiveFilter() on CreateFilter()
+
+[DONE]
+5) do not need in NewItemFOrm
+		private void removeSelectedFilterItems()
+		{
+			if (filtersListView.Items.Count > 0)
+			{
+
+[DONE]
+6) in it rename fbd on FolderBrowseDialog
+
+[DONE]
+7) void RemoveFilterButtonClick(object sender, EventArgs e)->removeFiltersButtonClick
+
+[DONE]
+8) rename all private event handlers from Xxx to xxx
+
+[DONE]
+9) sealed TreeManager
+
+[DONE]
+10) rename
++_root-> _rootFolder
++public TreeManager(string folder)->public TreeManager(string rootFolder)
++private void gatherFolder(DirectoryElement folderElement)->private void getFolderElements(DirectoryElement folder)
+
+===================== CR 6 ===================================================
+
+[DONE]
+1. StringComparison
+[DONE]
+2. NewItemForm->SolutionPropertiesForm form
+[DONE]
+3. settings.xml->settings.dat
+
+===================== CR 7 ===================================================
+
+OK
+
+============== ?????????????????????????
+[REJECTED - command line parameters should be used instead]
+неудобно время исползовать - нужно вспоминать. Лучше если тулзень будет запоминать текущее время как prrevious при сохранении
+
+тулзень не запоминает последнее время и последнюю версию
+[REJECTED - command line parameters should be used]
+a) time
+
+b) version
+
+использование->пользования
+- Вопрос-ZipSolution по всему приложению такая бага
+
+[REJECTED: HAVE no idea how to implement it with minimum support efforts]
+при бросании папки нужно и в шаблон имя папки подставлять а из строк автоподстановки убери пожалуйста APPNAME

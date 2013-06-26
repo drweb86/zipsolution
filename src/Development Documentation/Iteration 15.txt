@@ -1,0 +1,19 @@
+﻿
+План:
+
+[DONE]
+Добавить возможность указания для извлечения версии из
+- AssemblyInfo.cs файла
+- сборки
+
+[DONE]
+Convert the main contextmenu into a regular winform menubar
+
+[FIXED]
+Bug: when pressing on OK or via save to ... assembly check for uniquity of name is performed
+
+----- Deployment issues ---------
+1. Documentaion is ivalid
+
+
+_closed

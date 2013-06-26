@@ -1,0 +1,2 @@
+Generates supported output archive formats, compression methods and levels in code for static constructor of CompressionHelper.
+Usage tool.exe >> generated.cs

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{496D4C47-6D17-4EAA-863E-E42A3FB333E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZipSolution.Core</RootNamespace>
+    <AssemblyName>ZipSolution.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\ZipSolutionDevelopment.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HDE.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=524ab38f6e765b0e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bins\HDE.Platform\HDE.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp">
+      <HintPath>..\Bins\Eugene Sichcar-SevenZipSharp.codeplex.com\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\CommandHelper.cs" />
+    <Compile Include="Commands\CommandLineArguments.cs" />
+    <Compile Include="Commands\ExecuteProcessHelper.cs" />
+    <Compile Include="Commands\Hg\HgHelper.cs" />
+    <Compile Include="Commands\Hg\HgInfo.cs" />
+    <Compile Include="Commands\LoadVersionFromAssemblyCommand.cs" />
+    <Compile Include="Commands\LoadVersionFromAssemblyInfoCsCommand.cs" />
+    <Compile Include="Commands\LoadSolutionFromFileCommand.cs" />
+    <Compile Include="Commands\LoadOptionsCommand.cs" />
+    <Compile Include="Commands\PreprocessArgumentsCommand.cs" />
+    <Compile Include="Commands\SaveOptionsCommand.cs" />
+    <Compile Include="Commands\ProcessErrorsCommand.cs" />
+    <Compile Include="Commands\CompressCommand.cs" />
+    <Compile Include="Configuration\Settings.cs" />
+    <Compile Include="Configuration\XmlSettingsRepresentation.cs" />
+    <Compile Include="Configuration\ZipFileFormatStrings.cs" />
+    <Compile Include="Configuration\ZipSolutionEntry.cs" />
+    <Compile Include="Controller\CommonController.cs" />
+    <Compile Include="Controller\TreeManager.cs" />
+    <Compile Include="DataSources\DataSourceEnum.cs" />
+    <Compile Include="Filters\ExcludeFilesByTimeFilter.cs" />
+    <Compile Include="Filters\FilterAction.cs" />
+    <Compile Include="Filters\ExcludeFilesByMaskFilter.cs" />
+    <Compile Include="Filters\ExcludeFoldersByMaskFilter.cs" />
+    <Compile Include="Filters\FilterConfiguration.cs" />
+    <Compile Include="Filters\ProcessingContext.cs" />
+    <Compile Include="Filters\FilterUtil.cs" />
+    <Compile Include="DataSources\FolderAndFiltersDataSource.cs" />
+    <Compile Include="Filters\IFilter.cs" />
+    <Compile Include="DataSources\ManualArchiveDesignDataSource.cs" />
+    <Compile Include="Localization\FilterActionConverter.cs" />
+    <Compile Include="Localization\KindConverter.cs" />
+    <Compile Include="Misc\CompressionHelper.cs" />
+    <Compile Include="Misc\Ionic.FolderBrowseDialogEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Misc\Successfull.cs" />
+    <Compile Include="Misc\TortoiseSvnInteropHelper.cs" />
+    <Compile Include="Misc\ZipSolutionFileLog.cs" />
+    <Compile Include="Model\CommonModel.cs" />
+    <Compile Include="DataSources\IDataSource.cs" />
+    <Compile Include="Model\SupportedReplacements.cs" />
+    <Compile Include="StringLinq.cs" />
+    <Compile Include="Tree\Nodes\DirectoryElement.cs" />
+    <Compile Include="Tree\Nodes\Element.cs" />
+    <Compile Include="Tree\Nodes\ElementStatus.cs" />
+    <Compile Include="Tree\Nodes\FileElement.cs" />
+    <Compile Include="Tree\Nodes\Kind.cs" />
+    <Compile Include="Tree\PlainTreeRepresentation.cs" />
+    <Compile Include="View\IRequestVersionView.cs" />
+    <Compile Include="View\IRegisterErrorsView.cs" />
+    <Compile Include="View\IGetLastModificationsView.cs" />
+    <Compile Include="View\ViewHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\Docs\Changes.txt">
+      <Link>Docs\Changes.txt</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Docs\Documentation.doc">
+      <Link>Docs\Documentation.doc</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Bins\Eugene Sichcar-SevenZipSharp.codeplex.com\7z License.txt">
+      <Link>Docs\7z License.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Bins\Eugene Sichcar-SevenZipSharp.codeplex.com\SevenZipSharp LGPL License.txt">
+      <Link>Docs\SevenZipSharp LGPL License.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="7z.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\locals\default.LANGUAGE">
+      <Link>Locals\default.LANGUAGE</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\locals\German.LANGUAGE">
+      <Link>Locals\German.LANGUAGE</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\locals\Russian.LANGUAGE">
+      <Link>Locals\Russian.LANGUAGE</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

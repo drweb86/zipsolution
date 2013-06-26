@@ -1,0 +1,15 @@
+﻿====================================================
+      ZipSolution-Software requirements analysys
+====================================================
+
+Tool should not use any winApi and it should be implemented in managed code entirely.
+Also it should work well with different path delimiters using standard .net solutions
+
+Library should use Unicode or utf-32 for archives
+
+Project should be resistent to viruses
+
+It must allow integration via console tool (for sites)
+It must allow zipping inside ms build as task
+
+

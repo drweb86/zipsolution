@@ -1,0 +1,13 @@
+﻿[FIXED]
+1.
+bug in zipsolution
+
+when choose Exclude by date, field "Распространяется на" -> disabled
+
+expected: file should be selected and disabled
+
+2. command line answer 'week ago' for request start date dialog
+AnswerForFilterByDateStartTimeRequestDialogIsWeekAgo
+
+[DONE]
+3. cr - turtoise->tortoiseInterop

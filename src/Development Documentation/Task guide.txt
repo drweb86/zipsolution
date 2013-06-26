@@ -1,0 +1,11 @@
+ZipSolution - Task Guide
+
+1. All tasks must be tracked.
+2. All tasks that are worked on must be tracked in special Iteration¹.txt in the next format.
+VerMajor.VerMinor-TaskNo-SubtaskNo Text
+3. All externally created tasks must have the following format
+[#CodeplexNo]-SubtaskNo Text
+4. After implementation before release they must go to issue tracker of codeplex
+Titles must be
+[Task Id in Iteration¹] Title
+Text.

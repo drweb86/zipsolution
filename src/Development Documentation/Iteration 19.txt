@@ -1,0 +1,48 @@
+Plan for 5.6
+5.6-1. InnoSetup - check must be performed for .net4
+5.6-2. Default template should use net4 setting.
+5.6-3. Remove static settings from MS Build and cmd line
+5.6-4. Move help to ODT format
+5.6-4-1. Ensure and show in docs how to check exit codes.
+5.6-4-2. Ensure all exceptions in Console tool will return proper exit code.
+5.6-5. Release
+5.6-6. Code review
+5.6-6-1 code review must use new standard
+
+Бага - консолька запрашивает язык. если не указан должен использоваться default
+
+План ревью кода и приведения к СТД С25М1Н1 "Кодирование"
+1. Подготовка
+1.1 Комментарии, используется платформа, регионы
+
+2. Приведение кода
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+
