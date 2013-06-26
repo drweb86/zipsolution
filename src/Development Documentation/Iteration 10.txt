@@ -1,0 +1,20 @@
+﻿Plan:
+[DONE]
+1. German language adding
+
+[DONE] 
+2. German installation adding
+[DONE]
+3. Requests for german translator
+[FIXED]
+- Perhaps you can make the field (ID 9) below a bit larger to fit the German translation.
+[FIXED]
+- you misspelled "TortoiseSvn". There is "T_urtoise" everywhere in the program + docu :-)
+[FIXED by workaround. This issue discovered only in OS Vista]
+- The formatting of the "format variables help" is not so nice after translation 
+[FIXED]
+4. Bug: cONTROL iSrELEASE was enabled when there's no selected solution(!)
+
+
+
+

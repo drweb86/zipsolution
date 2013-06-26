@@ -1,0 +1,30 @@
+﻿// since this iteration, version control of tasks is applied
+// each task should be called with unique id
+
+[DONE]
+1 - Documentation check out and update
+[DONE]
+2 - F1 should open documentation
+
+[FIXED]
+1. when press Up and Down - in ListView - message box appears!
+
+[DONE]
+2. when installing good place
+Development\ZipSolution 4.3
+to be localized too !
+
+[DONE]
+3. copy paste .Net checking from nomad script
+
+[DONE]
+4. all other data should be placed like that
+Development\ZipSolution 4.3\Other
+That's uncomfortable to click on app searching by eyes through all this items
+
+[WORKAROUNDED by improving understandability and replacability of parameter]
+5. when pasting folder from other place and in normal way i should edit name of file in 
+it. from the other point APPNAme calls developer to replace it...
+
+[FIXED]
+6. No documentation link in group box

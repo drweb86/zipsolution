@@ -1,0 +1,6 @@
+Plan for 5.5
+
+1. Please, localize log messages
+2. Please add support for task files
+3. Fix missing solution - must be exception
+4. Please add return code check

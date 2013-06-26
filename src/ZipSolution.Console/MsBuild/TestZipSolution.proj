@@ -1,0 +1,7 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="ZipSolutionTask" AssemblyFile="D:\Проекты\zipsolution.codeplex.com\trunk\Output\ZipSolution.Console.exe" />
+ 
+  <Target Name="MyTarget">
+      <ZipSolutionTask AnswerForFilterByDateStartTimeRequestDialogIsWeekAgo="False" Password="" UseReleaseConfiguration="False" Project="GWC-1" SolutionFile="" Version="MS Build" LastChangeTime="" WaitMsec="0" ExtractVersionFromAssemblyInfoCsFile="" ExtractVersionFromAssemblyFile=""/>
+   </Target>
+</Project>

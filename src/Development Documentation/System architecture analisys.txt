@@ -1,0 +1,13 @@
+﻿==================================================
+      ZipSolution-System architecture analysys
+==================================================
+
+Program should use MVC pattern
+Dependency on Ionic Zip library is allowed
+
+It should run on .net 4
+It should run on MS Windows 7
+
+---------------------------------------------------------------- REVISION C23M3H1
+Platform must be 4. To support 1,2,3.5,4 assemblies
+OS must be win 7
